@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>JVS Tuki – Laitteen valinnan apu</title>
-  <meta name="description" content="JVS Tuki: henkilökohtaista apua laitteen valintaan, käyttöönottoon sekä kotiverkkoon ja älykotiin. Esittelyvideot ja asiakaskysely." />
+  <meta name="description" content="JVS Tuki: henkilökohtaista apua laitteen valintaan, käyttöönottoon sekä kotiverkkoon ja älykotiin. Esittelyvideot." />
   <link rel="icon" href="logo.png" />
   <style>
     :root { --bg:#0b1020; --card:#121a33; --muted:#8ea0c9; --text:#eef2ff; --accent:#5dd6ff; }
@@ -37,7 +37,6 @@
     .video-card { padding:16px; }
     video, iframe.video { width:100%; aspect-ratio:16/9; border:0; border-radius:16px; background:#000; }
     .hint { color:var(--muted); font-size:14px; }
-    .gform { width:100%; height:1000px; border:0; border-radius:16px; background:#fff; }
     footer { max-width:1100px; margin:0 auto; padding:24px 20px 60px; color:var(--muted); }
     @media (min-width:900px) { .video-grid { grid-template-columns:1fr 1fr; } }
     @media (max-width:900px) { .hero { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } }
@@ -52,12 +51,10 @@
     <nav class="nav">
       <a href="#palvelu">Palvelu</a>
       <a href="#video">Video</a>
-      <a href="#kysely">Kysely</a>
       <a href="#yhteys">Yhteys</a>
     </nav>
   </header>
-
-  <!-- ✅ БЛОК УСЛУГ ПЕРЕД ВИДЕО -->
+  
   <section class="hero">
     <div class="card lead">
       <h1>Tarvitsetko apua laitteen valinnassa ja käyttöönotossa?</h1>
@@ -68,7 +65,7 @@
         <div class="badge">Säästää aikaa ja rahaa</div>
       </div>
       <div class="cta">
-        <a class="btn btn-primary" href="#kysely">Osallistu kyselyyn</a>
+        <a class="btn btn-primary" href="#yhteys">Ota yhteyttä</a>
         <a class="btn btn-ghost" href="#palvelu">Lue lisää</a>
       </div>
     </div>
@@ -101,7 +98,6 @@
     </div>
   </section>
 
-  <!-- ▶️ Видео-секция -->
   <section id="video" class="video-wrap">
     <h2 style="padding:0 6px;">Esittelyvideot</h2>
     <div class="video-grid">
@@ -115,18 +111,11 @@
       </div>
       <div class="card video-card">
         <h3>YouTube</h3>
-        <iframe class="video" src="https://www.youtube.com/embed/O5XZAcHE_fI" title="YouTube video"
+        <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
       </div>
     </div>
-  </section>
-
-  <!-- 📝 Опрос через Google Forms (можно заменить на свой src) -->
-  <section id="kysely" class="section card panel">
-    <h2>Asiakaskysely (Google Forms)</h2>
-    <p class="hint">Vastaukset tallentuvat Google Sheetiin. Vaihda alle oma lomakkeesi (Send → </> Embed → kopioi src).</p>
-    <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSflx9p-nQN38HDGYA0fTOjcsCsI-Jd3rdOX0XMYbN1Ff6E6Tg/viewform?embedded=true">Ladataan…</iframe>
   </section>
 
   <section id="yhteys" class="section">
